@@ -2,13 +2,14 @@
   "name": "realtor",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
+  
+"scripts": {
+  "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
+  "build": "set NODE_OPTIONS=--openssl-legacy-provider && next build",
+  "start": "set NODE_OPTIONS=--openssl-legacy-provider && next start",
+  "lint": "next lint"
+},
+"dependencies": {
     "@chakra-ui/react": "^1.6.8",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
